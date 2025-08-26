@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "safe-litellm"
+version = "0.1.0"
+description = ""
+authors = ["Samir Nunes da Silva"]
+readme = "README.md"
+packages = [{include = "safe_litellm", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+litellm = "^1.76.0"
+tenacity = "^9.1.2"
+fastapi = "^0.116.1"
+pydantic = "^2.11.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
